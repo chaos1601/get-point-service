@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html dir = ltr lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Dale Ruppert">
+        <meta name="description" content="Dale Ruppert: Web Developer">
+        <meta name="keywords" content="web developer, web, developer, front-end, html, css, javascript, react, sql">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <title>Get Point Service</title>
+        <link rel="stylesheet" href="./assets/style/index.css" media="all">
+        <script src="./assets/script/app.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet'/>
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="container flexbox">
+                    <h1>Get Point Service</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <button>Login</button>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section>
+                <div>
+                    <div class="banner">
+                        <h2>
+                            Are you interested in finding out where you are in the world?
+                        </h2>
+                        <p>
+                            This is the place to be!!!!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="service">
+                    <h2>Our Services</h2>
+                    <p>
+                        Our services include GPS capabilities, fast loading, reliable routes, and more.
+                    </p>
+                    <div class="row container">
+                        <div class="column">
+                            <p>GPS</p>
+                            <ul>
+                                <li>Where you want to go?</li>
+                                <li>Lets get there quickly!</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <p>Fast Loading</p>
+                            <ul>
+                                <li>No need to wait for a long time to load the map</li>
+                                <li>Good connection? Quick loading</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <p>Reliable Routes</p>
+                            <ul>
+                                <li>Quickest and easiest routes to your destination</li>
+                                <li>Informs if there is construction on the route</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class=" container place">
+                <h2>Want to know where you are?</h2>
+                <p>
+                    Click the "Track" button and click "Allow" in oder to see your possition.
+                </p>
+                <button class="track">Track</button>
+            </section>
+            <section class="container location">
+                <div id="map"></div>
+                <p>
+                    You must click the "Track" button in order for the map to show up.
+                </p>
+            </section>
+            <footer>
+                <h3 class="container footer">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube"></i>
+                    <p>Dale Ruppert &copy; 2023</p>
+                </h3>
+            </footer>
+        </main>
+    </body>
+</html>

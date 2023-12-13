@@ -1,0 +1,253 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=PT+Sans&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border-style: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-grey-bg: #f3f4f5;
+    --app-grey: #bebebeb8;
+    --app-white: #ffff;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.flexbox {
+    display: flex;
+}
+
+header {
+    background-color: var(--app-dark-bg);
+    color: var(--app-white);
+    height: 60px;
+    overflow: hidden;
+}
+
+header div {
+    width: 40%;
+}
+
+h1 {
+    width: 60%;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+nav {
+    width: 40%;
+}
+
+nav ul {
+    font-size: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: var(--app-white);
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+    text-align: center;
+}
+
+nav ul button {
+    background-color: var(--app-blue);
+    width: 80px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+body {
+    background-color: var(--app-white);
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.banner {
+    background: #000 url(../img/Planet2.jpg) center center / cover no-repeat;
+    height: 620px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+.banner h2 {
+    color: var(--app-white);
+    font-size: 30px;
+    font-weight: bold;
+    width: 450px;
+}
+
+.banner p {
+    color: var(--app-white);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.service {
+    background-color: var(--app-grey-bg);
+    height: 400px;
+}
+
+.service h2 {
+    padding-top: 20px;
+}
+
+.service p {
+    place-self: center;
+}
+
+.row {
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    background-color: transparent;
+}
+
+.column {
+    background-color: var(--app-white);
+    flex: 0 1 auto;
+    width: 270px;
+    height: 200px;
+}
+
+.column p {
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+.column ul {
+    margin: 0;
+    padding: 0;
+}
+
+.column ul li {
+    text-align: left;
+    padding: 5px 0 0 7px;
+}
+
+@media screen and (max-width: 601px) {
+    nav ul li {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav ul i {
+       display: inline-block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        height: 50%;
+    }
+    .column {
+        width: calc(50% - 10px);
+    }
+  }
+
+@media screen and (max-width: 480px) {
+    .column {
+        width: 100%;
+    }
+}
+  
+
+.place {
+    margin-top: 20px;
+}
+
+.place p {
+    margin: 10px 0 10px 0;
+}
+
+.place button {
+    background-color: var(--app-blue);
+    width: 80px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.location {
+    height: 400px;
+    width: 60%;
+    background-color: var(--app-grey-bg);
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.location p {
+    text-align: center;
+}
+
+#map {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    margin-top: 100px;
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    color: var(--app-white);
+    background-color: var(--app-dark-bg);
+}
+
+i {
+    margin: 15px auto auto 20px;
+    padding-top: 20px;
+}
+
+h3 p {
+    text-align: end;
+    margin-right: 20px;
+    font-size: 14px;
+}
